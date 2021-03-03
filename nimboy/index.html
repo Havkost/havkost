@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>NIM-BOY 2021</title>
+    
+    <link rel="icon" type="image/png" href="res/nimFavicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/boxAnimations.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <img class="icon" src="res/nimLogoLight.png">
+        <nav>
+            <ul>
+                <a href="#welcome-section"><li>Welcome</li></a>
+                <a href="#about-section"><li>About</li></a>
+                <a href="#contents-section"><li>Contents</li></a>
+            </ul>
+        </nav>
+    </div>
+    <section id="welcome-section">
+        <img class="icon" src="res/nimLogoDark.png">
+        <h1 class="title">NIMBOY 2021</h1>
+        <span class="description">- Bringing a classic gem, to the digital age -</span>
+    </section>
+    <section id="about-section">
+        <h1 class="heading">About</h1>
+        <div class="article">
+            <h2 class="subheading">The game 'nim'</h2>
+            <span class="body-text">
+                The NIM-BOY2021 is what we envision as the clash between late 90s gaming consoles and the ancient game known as 'nim'.
+            </span>
+            <br>
+            <span class="body-text">
+                <a href="https://en.wikipedia.org/wiki/Nim">Nim</a> is a simple strategy game that can be played with everything from small rocks to coins. The game is played between two people, with some number of stacks containing some number of objects each. The players then take turns picking up some number of items from whichever pile they would like. The player to empty the last pile wins the game.
+            </span>
+        </div>
+        <div class="article">
+            <h2 class="subheading">Who are we?</h2>
+            <span class="body-text">The team behind NIM-BOY2021 consists of 3 danish gynmasium students studying at Hillerød techical gynmasium, August, Kasper and Mathias. We are making this handheld device as an examn-project in electronics. </span>
+        </div>
+    </section>
+    <section id="contents-section">
+        <h1 class="heading">Contents</h1>
+        <span class="subheading">Open the box to see what it's made of!</span>
+        <div id="box-contents">
+            <div class="showcase-animation" onclick="toggleBoxLid()">
+                <img id="nim-box" src="res/openBox.png">
+                <img id="nim-lid" src="res/boxLid.png">
+            </div>
+        </div>
+        <div class="article-container">
+            <div class="article">
+                <img class="icon" src="res/ledIcon.png">
+                <h1 class="heading">LEDs</h1>
+                <span class="body-text">Lorem ipsum dolor sit amet, consecteteur</span>
+            </div>
+            <div class="article">
+                <img class="icon" src="res/buttonIcon.png">
+                <h1 class="heading">Buttons</h1>
+                <span class="body-text">Lorem ipsum dolor sit amet, consecteteur</span>
+            </div>
+            <div class="article">
+                <img class="icon" src="res/multiplexerIcon.png">
+                <h1 class="heading">Multiplexers</h1>
+                <span class="body-text">Lorem ipsum dolor sit amet, consecteteur</span>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Copyright &copy;2021 NIM-BOY2021 A/S</span>
+    </footer>
+</body>
+</html>
