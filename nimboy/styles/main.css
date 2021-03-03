@@ -27,8 +27,9 @@
     font-size: 5em;
     font-weight: bold;
     text-align: center;
+    color: #14a27a;
     
-    font-family: ubuntu, sans-serif;
+    font-family: 'Press start 2p', ubuntu, sans-serif;
 }
 
 .heading {
@@ -36,12 +37,16 @@
     font-size: 3em;
     font-weight: bold;
     text-align: center;
+    color: #14a27a;
+
+    font-family: 'Press start 2p', ubuntu, sans-serif;
 }
 
 .subheading {
     width: 100%;
     font-size: 2em;
     text-align: center;
+    color: #101326;
 }
 
 .byline {
@@ -53,6 +58,7 @@
 
 .description {
     width: 100%;
+    margin: 1em 0;
     font-size: 1.5em;
     font-style: italic;
     text-align: center;
@@ -62,6 +68,10 @@
 .body-text {
     font-size: 1.5em;
     line-height: 1.5em;
+}
+
+.highlighted {
+    color: #14a27a;
 }
 
 a {
@@ -87,7 +97,7 @@ a:focus {
 body {
     margin: 0;
     font-family: ubuntu, sans-serif;
-    color: #101326;
+    color: #303346;
 }
 
 .article {
