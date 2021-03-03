@@ -1,0 +1,93 @@
+/*
+    Structure
+*/
+
+body {
+    margin: 0;
+    background: #10181A;
+    color: #FFF;
+    font-family: ubuntu, sans-serif;
+    font-size: 1.6em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding: 2em 10%;
+}
+
+/*
+    Formatting
+*/
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    color: #90DC57;
+}
+
+a {
+    text-decoration: none;
+    color: #10181A;
+
+    transition-property: color;
+    transition-duration: 200ms;
+}
+
+a:hover {
+    color: #DFFFDF;
+}
+
+/*
+    ELements
+*/
+
+/*
+    Navigation
+*/
+nav {
+    margin: 0 auto;
+    padding: 2em 5em;
+    background: #90dc57;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    padding: 0.5em 0;
+    border-bottom: 2px solid #101326;
+}
+
+nav li:last-of-type {
+    border: none;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
