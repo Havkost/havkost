@@ -259,14 +259,30 @@ nav a:focus {
 
 .beetle-description .body-text {
     grid-area: description;
+    padding: 1em;
 }
 
 .beetle-description img {
     grid-area: image;
+    padding: 1em;
 }
 
 .beetle-classes {
     grid-area: classes;
+    padding: 1em;
+    border-left: 2px solid #3A1717;
+    border-right: 2px solid #3A1717;
+}
+
+.beetle-classes ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.beetle-classes li {
+    margin: 0.5em 0;
+    font-size: 1.2em;
 }
 
 /*
