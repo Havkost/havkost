@@ -72,19 +72,16 @@
 }
 
 a {
-    color: #D31F42;
+    color: #F7931D;
     text-decoration: none;
-
-    transition-property: border-bottom;
-    transition-duration: 200ms;
 }
 
 a:hover {
-    border-bottom: 2px solid #D31F42;
+    border-bottom: 2px solid #F7931D;
 }
 
 a:focus {
-    border-bottom: 2px solid #D31F42;
+    border-bottom: 2px solid #F7931D;
 }
 
 /*
@@ -114,7 +111,7 @@ body {
 
 footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     padding: 5em;
     background: #3A1717;
@@ -135,19 +132,10 @@ section {
     justify-content: center;
     width: 100%;
     padding: 5em 0;
-
-    box-shadow: 0 5.1em 0 -5em #3A1717;
-    -moz-box-shadow: 0 5.1em 0 -5em #3A1717;
-    -o-box-shadow: 0 5.1em 0 -5em #3A1717;
-    -webkit-box-shadow: 0 5.1em 0 -5em #3A1717;
 }
 
 section:first-of-type {
     margin-top: 3em;
-}
-
-section:last-of-type {
-    border-bottom: none;
 }
 
 /*
@@ -192,6 +180,14 @@ section:last-of-type {
 
 section .icon {
     margin: 0 auto;
+}
+
+/*
+    Screenshots
+*/
+.screenshot {
+    width: 100%;
+    margin: auto;
 }
 
 /*
@@ -309,6 +305,10 @@ nav a:focus {
     .article {
         width: 60%;
         margin: 0 15%;
+    }
+
+    .screenshot {
+        width: 70%;
     }
 
     .beetle-description {
