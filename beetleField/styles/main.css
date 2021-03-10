@@ -3,6 +3,7 @@
 
     DarkGrey: #2A2A2A
     Green: #79C152
+    DarkGreen: #297142
     Red: #D31F42
     Bordeaux: #871741
     Yellow: #F3C02D
@@ -42,7 +43,7 @@
     width: 100%;
     font-size: 2em;
     text-align: center;
-    color: #101326;
+    color: #F3C02D;
 }
 
 .byline {
@@ -71,7 +72,7 @@
 }
 
 a {
-    color: #406366;
+    color: #D31F42;
     text-decoration: none;
 
     transition-property: border-bottom;
@@ -79,11 +80,11 @@ a {
 }
 
 a:hover {
-    border-bottom: 2px solid #406366;
+    border-bottom: 2px solid #D31F42;
 }
 
 a:focus {
-    border-bottom: 2px solid #406366;
+    border-bottom: 2px solid #D31F42;
 }
 
 /*
@@ -93,7 +94,7 @@ a:focus {
 body {
     margin: 0;
     font-family: ubuntu, sans-serif;
-    color: #303346;
+    color: #F3C02D;
     background: #633534;
 }
 
@@ -135,10 +136,14 @@ section {
     width: 100%;
     padding: 5em 0;
 
-    box-shadow: 0 5.1em 0 -5em #774D46;
-    -moz-box-shadow: 0 5.1em 0 -5em #774D46;
-    -o-box-shadow: 0 5.1em 0 -5em #774D46;
-    -webkit-box-shadow: 0 5.1em 0 -5em #774D46;
+    box-shadow: 0 5.1em 0 -5em #3A1717;
+    -moz-box-shadow: 0 5.1em 0 -5em #3A1717;
+    -o-box-shadow: 0 5.1em 0 -5em #3A1717;
+    -webkit-box-shadow: 0 5.1em 0 -5em #3A1717;
+}
+
+section:first-of-type {
+    margin-top: 3em;
 }
 
 section:last-of-type {
@@ -230,6 +235,38 @@ nav a {
 nav a:hover {
     background: rgba(41,113,66,0.5);
     border-bottom: none;
+}
+
+nav a:focus {
+    border-bottom: 2px solid #FFF;
+}
+
+/*
+    Beetle descriptions
+*/
+.beetle-description {
+    display: grid;
+    grid-template:
+        'name name name name'
+        'description description classes image';
+    grid-gap: 2em;
+    width: 100%;
+}
+
+.beetle-description .subheading {
+    grid-area: name;
+}
+
+.beetle-description .body-text {
+    grid-area: description;
+}
+
+.beetle-description img {
+    grid-area: image;
+}
+
+.beetle-classes {
+    grid-area: classes;
 }
 
 /*
