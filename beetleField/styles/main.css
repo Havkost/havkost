@@ -247,10 +247,16 @@ nav a:focus {
 .beetle-description {
     display: grid;
     grid-template:
-        'name name name name'
-        'description description classes image';
+        'name'
+        'image'
+        'description'
+        'classes';
     grid-gap: 2em;
-    width: 100%;
+    border-bottom: 1em solid #633534;
+}
+
+.beetle-description:last-of-type {
+    border-bottom: none;
 }
 
 .beetle-description .subheading {
@@ -265,13 +271,12 @@ nav a:focus {
 .beetle-description img {
     grid-area: image;
     padding: 1em;
+    margin: auto;
 }
 
 .beetle-classes {
     grid-area: classes;
     padding: 1em;
-    border-left: 2px solid #3A1717;
-    border-right: 2px solid #3A1717;
 }
 
 .beetle-classes ul {
@@ -286,6 +291,17 @@ nav a:focus {
 }
 
 /*
+    Medium screens
+
+@media only screen and (min-width: 1200px) {
+    .article {
+        width: 60%;
+        margin: 0 15%;
+    }
+}
+*/
+
+/*
     Big screens
 */
 
@@ -293,6 +309,19 @@ nav a:focus {
     .article {
         width: 60%;
         margin: 0 15%;
+    }
+
+    .beetle-description {
+        grid-template:
+        'name name name name'
+        'description description classes image';
+    }
+
+    .beetle-classes {
+        grid-area: classes;
+        padding: 1em;
+        border-left: 2px solid #3A1717;
+        border-right: 2px solid #3A1717;
     }
 }
 
