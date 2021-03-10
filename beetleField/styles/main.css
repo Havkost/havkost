@@ -68,7 +68,7 @@
 }
 
 .highlighted {
-    color: #14a27a;
+    color: #F7931D;
 }
 
 a {
@@ -248,6 +248,7 @@ nav a:focus {
         'description'
         'classes';
     grid-gap: 2em;
+    justify-content: unset;
     border-bottom: 1em solid #633534;
 }
 
@@ -262,6 +263,7 @@ nav a:focus {
 .beetle-description .body-text {
     grid-area: description;
     padding: 1em;
+    line-height: 2em;
 }
 
 .beetle-description img {
@@ -273,6 +275,7 @@ nav a:focus {
 .beetle-classes {
     grid-area: classes;
     padding: 1em;
+    text-align: center;
 }
 
 .beetle-classes ul {
@@ -315,6 +318,7 @@ nav a:focus {
         grid-template:
         'name name name name'
         'description description classes image';
+        grid-template-columns: 25% 25% 25% 25%;
     }
 
     .beetle-classes {
