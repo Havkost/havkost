@@ -92,7 +92,8 @@ body {
     margin: 0;
     font-family: ubuntu, sans-serif;
     color: #F3C02D;
-    background: #633534;
+    background: radial-gradient(rgb(99,53,52), rgb(61, 28, 28));
+    background-attachment: fixed;
 }
 
 .article {
