@@ -184,6 +184,13 @@ section .icon {
 }
 
 /*
+    Large icons
+*/
+.large-icon {
+    width: 20em;
+}
+
+/*
     Screenshots
 */
 .screenshot {
@@ -291,17 +298,6 @@ nav a:focus {
 
 /*
     Medium screens
-
-@media only screen and (min-width: 1200px) {
-    .article {
-        width: 60%;
-        margin: 0 15%;
-    }
-}
-*/
-
-/*
-    Big screens
 */
 
 @media only screen and (min-width: 1200px) {
@@ -331,6 +327,10 @@ nav a:focus {
         padding: 1em;
         border-left: 2px solid #3A1717;
         border-right: 2px solid #3A1717;
+    }
+
+    .large-icon {
+        width: 40em;
     }
 }
 
@@ -364,6 +364,10 @@ nav a:focus {
         padding: 1em;
         border-left: 2px solid #3A1717;
         border-right: 2px solid #3A1717;
+    }
+
+    .large-icon {
+        width: 60em;
     }
 }
 
