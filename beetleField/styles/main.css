@@ -268,7 +268,6 @@ nav a:focus {
 
 .beetle-description img {
     grid-area: image;
-    padding: 1em;
     margin: auto;
 }
 
@@ -316,9 +315,47 @@ nav a:focus {
 
     .beetle-description {
         grid-template:
+        'name name'
+        'description description'
+        'classes image';
+        grid-template-columns: 50% 50%;
+    }
+
+    .beetle-description img {
+        padding: 1em;
+    }
+
+    .beetle-classes {
+        grid-area: classes;
+        padding: 1em;
+        border-left: 2px solid #3A1717;
+        border-right: 2px solid #3A1717;
+    }
+}
+
+/*
+    Big screens
+*/
+
+@media only screen and (min-width: 2400px) {
+    .article {
+        width: 60%;
+        margin: 0 15%;
+    }
+
+    .screenshot {
+        width: 70%;
+    }
+
+    .beetle-description {
+        grid-template:
         'name name name name'
         'description description classes image';
         grid-template-columns: 25% 25% 25% 25%;
+    }
+
+    .beetle-description img {
+        padding: 1em;
     }
 
     .beetle-classes {
