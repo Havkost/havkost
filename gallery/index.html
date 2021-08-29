@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Gallery</title>
+</head>
+<body>
+    <section id="welcome-section">
+        <h1 class="title">Image Gallery</h1>
+    </section>
+    <section>
+        <image-showcase image="./res/farewellNorthWPLogo.png">
+            <div slot="image-title">Farewell north flatart</div>
+            <div slot="image-description">Lorem ipsum dolor sit amet</div>
+        </image-showcase>
+    </section>
+    <section>
+        <image-showcase image="./res/sky.png">
+            <div slot="image-title">Sky drawing</div>
+            <div slot="image-description">Lorem ipsum dolor sit amet</div>
+        </image-showcase>
+    </section>
+    <footer>
+        <span>Copyright &copy;2021 Havkost</span>
+        <span>Discord: Havkost#1232</span>
+        <img src="./res/logoWhite.png" alt="logo" width="256px">
+    </footer>
+
+    <!-- Include custom components -->
+    <script src="components/imageShowcase.js"></script>
+</body>
+</html>

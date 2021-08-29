@@ -1,0 +1,139 @@
+/*
+    STRUCTURE
+*/
+
+body {
+
+    margin: 0;
+    font-family: 'quicksand', sans-serif;
+    font-size: 1.6em;
+    background: #402c29;
+    color: #F2D479;
+}
+
+/*
+    Sections
+*/
+section {
+
+    position: relative;
+    width: 100%;
+    background: #186b4c;
+    box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.25);
+    -o-box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.25);
+    -ms-box-shadow: -1em 1em 0 rgba(0, 0, 0, 0.25);
+}
+
+section::after {
+    content: "";
+    position: absolute;
+    background: #402c29;
+    top: 1em;
+    right: 1em;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+}
+
+/*
+    TEXT FORMATTING
+*/
+
+.title {
+
+    text-align: center;
+    font-size: 3em;
+    font-weight: lighter;
+    color: #F2D479;
+}
+
+.heading {
+
+    color: #F2D479;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer * {
+
+    display: block;
+    flex-wrap: wrap;
+    margin: 0.5em auto;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /*
+        Sections
+    */
+    section {
+
+        width: 90%;
+        padding: 2em 5%;
+        margin: 2em 0;
+        box-shadow: none;
+        -o-box-shadow: 0px 1em 0 rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 1em 0 rgba(0, 0, 0, 0.25);
+        -webkit-box-shadow: 0px 1em 0 rgba(0, 0, 0, 0.25);
+        -ms-box-shadow: 0px 1em 0 rgba(0, 0, 0, 0.25);
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+    /*
+        Sections
+    */
+    section {
+
+        width: 80%;
+        padding: 5%;
+        margin: 5%;
+    }
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 2200px) {
+
+    body {
+        font-size: 2em;
+    }
+
+    /*
+        Sections
+    */
+    section {
+
+        width: 80%;
+        padding: 5%;
+        margin: 5%;
+
+    }
+}
+
+@media only screen and (min-width: 2200px) {
+
+    body {
+        font-size: 3em;
+    }
+
+    /*
+        Sections
+    */
+    section {
+
+        width: 80%;
+        padding: 5%;
+        margin: 5%;
+    }
+}
